@@ -20,11 +20,11 @@ img {
 }
 
 ul {
-  padding: 10px;
+  padding: 100px;
   background: black;
 }
 
 li {
-  display: inline;
+  display: block;
   padding: 0px 10px 0px 10px;
 }
