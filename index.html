@@ -3,41 +3,154 @@
 
 <head>
 	<title>Aaron Du's Homepage</title>
-	<link href="/cantab2013.github.io/normalize.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="http://cantab2013.github.io/normalize.css" >
 
-	<script>
-	</script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="jquery.scrollbox.js"></script>
+
+<style>
+
+body {
+  margin: 0 auto;
+}
+
+h2 {
+  position: relative;
+  top: -20px;
+  font-size: 24px;
+  color: black;
+  text-align: center;
+}
+
+ul {
+  position: relative;
+  left: -20px;
+  top: -20px;
+}
+
+p {
+  position: relative;
+  top: -20px;
+}
+
+img {
+  position: relative;
+  left: 10px;
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+
+}
+
+.container {
+  display: inline-block;
+  float: left;
+  height: 250px;
+  width: 230px;
+  background-color: rgba(0, 0, 255, .2);
+  border: 10px solid white;
+  border-radius: 5px;
+  margin: 10px auto;
+  padding: 30px;
+}
+
+.filler {
+  background-color: rgba(10, 0, 255, .5);
+}
+
+
+span {
+  position: relative;
+  bottom: -20px;
+  font-family: cursive;
+  font-size: 20px;
+  color: black;
+}
+
+</style>
+
 </head>
-
-
 
 <body>
 
-  <img src="http://cantab2013.github.io/assets/2.jpg">
-  
-  <header>
-    <h1>Aaron Du</h1><br><br>
-    
-    <h2>About Me</h2> 
-    <p>Serial entrepreneur with 8+ years of management experience in founding, scaling and operating high-growth cross-geographic businesses, private equity investing, and M&A, with particular expertise in the Greater China market.</p>
+  <div class="container"> 
+    <h2>About Aaron</h2> 
+    <p>Serial entrepreneur with 8+ years of management experience in startups, private equity investing, and M&A. US and China educated.</p>
+  </div>
 
+  <div class="container filler">
+  </div>
+
+  <div class="container" class="single-item"> 
+    <img src="http://cantab2013.github.io/assets/1.jpg">
+    <span>Photo from Publications</span>
+  </div>
+
+
+  <div class="container filler" style="clear: both">
+  </div>
+ 
+  <div class="container"> 
+    <img src="http://cantab2013.github.io/assets/2.jpg">
+    <span>Photo from Conferences</span>
+  </div>
+
+  <div class="container">   
     <h2>My Experience</h2>
     <ul>
-    	<li>CEO and Founder, Delivering Happiness Group (Cayman) Ltd., 2009-2013</li>
+      <li>Lean Enterprise (Cayman) Ltd., 2014-Present</li>
+    	<li>Delivering Happiness Group (Cayman) Ltd., 2009-2013</li>
     	<li>Harvard Business School, 2008-2009</li>
-    	<li>Private Equity Analyst, Kohlberg Kravis Roberts & Co., 2006-2008</li>
-    	<li>Investment Banking Analyst, J.P. Morgan Securities, 2005-2006</li>
-    	<li>Massachusetts Institute of Technology, 2001-2005</li>
+    	<li>Kohlberg Kravis Roberts & Co., 2006-2008</li>
+    	<li>J.P. Morgan Securities, 2005-2006</li>
+    	<li>M.I.T., 2001-2005</li>
     </ul>
+  </div>
+   
+  
+  <div class="container" style="clear: both"> 
+    <img src="http://cantab2013.github.io/assets/3.jpg">
+    <span>Photo from Officespace</span>
+  </div>
 
-    <h2>Contact Information</h2>
+  <div class="container filler">
+  </div>
+ 
+  <div class="container">   
+    <h2>Contact Info</h2>
     <ul>
     	<li>Email: aarondu [at] gmail [dot] com</li>
-    	<li>Mobile: (650) 278 3030
+    	<li>Mobile: (650) 278 3030</li>
     </ul>
+  </div>
 
-  </header>
+  <div id="demo5" class="scroll-text" style="clear: both">
+    <ul>
+      <li><img src="http://cantab2013.github.io/assets/c1.png"></li>
+      <li><img src="http://cantab2013.github.io/assets/c2.png"></li>
+      <li><img src="http://cantab2013.github.io/assets/c3.png"></li>
+      <li><img src="http://cantab2013.github.io/assets/c4.png"></li>
+      <li><img src="http://cantab2013.github.io/assets/c5.png"></li>
+      <li><img src="http://cantab2013.github.io/assets/c6.png"></li>
+      <li><img src="http://cantab2013.github.io/assets/c7.png"></li>
+      <li><img src="http://cantab2013.github.io/assets/c8.png"></li>
+    </ul>
+  </div>
 
-  <img src="http://cantab2013.github.io/assets/3.jpg">
+<script>
+
+  $('#demo5').scrollbox({
+    direction: 'h',
+    switchItems: 4,
+    distance: 140
+  });
+  $('#demo5-backward').click(function () {
+    $('#demo5').trigger('backward');
+  });
+  $('#demo5-forward').click(function () {
+    $('#demo5').trigger('forward');
+  });
+
+</script>
 
 </body>
